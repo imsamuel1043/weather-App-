@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous" ></script>
+    <!-- <style>
+            .input{
+                background-color: aqua;
+            }
+        </style> -->
+
+    <style>
+        /* .highlight {
+            background-color: yellow;
+
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- <button id="attributeFilter">color</button>
+    <button id="Filter">back</button>
+    <input type="text"> -->
+
+
+    <!-- <button id="show">show</button>
+<p>how dare you!</p> -->
+
+    <!-- <div>
+        <div class="child">yooo</div>
+        <div class="child">hellooii</div>
+        <div class="child">koooiii</div>
+    </div>
+    <button id="childFilter">clickieess</button>
+ -->
+
+
+
+    <!-- <div>hello my man</div>
+    <div>naja is here</div>
+    <div>nothing else</div>
+    <button id="contentFilter">click</button>
+ -->
+
+
+    <!-- <button id="highlightSiblings">Highlight siblings</button>
+    <div>
+        <ul>
+            <li>item A</li>
+            <li>item B</li>
+        </ul>
+
+    </div>
+    <section>
+        <ul>
+            <li>item A</li>
+            <li>item B</li>
+        </ul>
+
+    </section> -->
+
+    <!-- <button id="butn">click</button>
+    <h1 id="p1">Luffy</h1> -->
+
+    <!-- <p id="test">This is <b>bold</b> text.</p>
+
+    <button id="btn1">Show Text</button>
+    <button id="btn2">Show HTML</button>
+ -->
+
+
+    <p> show output</p>
+    <p id="output"></p>
+
+    <script>
+
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/posts",
+            beforeSend: function (xhr) {
+                xhr.overrideMimeType("text/plain; charset=x-user-defined");
+            }
+        })
+            .done(function (data) {
+                if (console && console.log) {
+                    console.log(data);
+                }
+            })
+
+
+        document.getElementById("output").innerHTML = html;
+
+
+
+
+        //     $(document).ready (function(){
+
+        //     $("#hide").click(function(){
+        //         $("p").hide();
+        //     });
+        // $("#show").click(function(){
+        //         $("p").show();
+        //     });
+        // });
+
+
+
+        // $("#attributeFilter").click(function () {
+        //     $("input[type='text']").css("background-color", "#ffeb3b");
+        // });
+        //  $("#Filter").click(function () {
+        //     $("input[type='text']").css("background-color", "white");
+        // });
+
+
+        // $("#childFilter").click(function () {
+        //     $(".child:first").css({"border": "2px solid #4caf50","color": "#4caf50"});
+        // });
+
+
+
+
+
+        // $("#contentFilter").click(function () {
+        //     $("div:contains('naja')").css("background-color", "#2196f3").css("color", "white");
+        // });
+
+
+
+        //    $("#highlightChildren").click(function () {
+        //      $("#container").children().addClass("highlight");
+        //      });
+
+        // $("#highlightSiblings").click(function () {
+        //     $("li").siblings().addClass("highlight");
+        // });
+
+        // $("#butn").click(function () {
+        //     $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+        // });
+
+
+
+        // $("#btn1").click(function () {
+        //     alert("Text: " + $("#test").text());
+        // });
+
+
+        // $("#btn2").click(function () {
+        //     alert("HTML: " + $("#test").html());
+        // });
+
+
+
+
+    </script>
+
+</body>
+
+</html>
